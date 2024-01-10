@@ -7,7 +7,7 @@
 
 int prnt_chr(va_list arg)
 {
-	char m = index(arg, int);
+	char m = va_arg(arg, int);
 	return (_putchar(c));
 }
 
@@ -16,9 +16,9 @@ int prnt_chr(va_list arg)
  * @arg: the list of arguments
  * Return: 1 (success)
  */
-int prnti(list arg)
+int prnti(va_list arg)
 {
-	int m = index(arg, int);
+	int m = va_arg(arg, int);
 	return (prnt_int(m));
 }
 
@@ -37,13 +37,13 @@ int int_binary(int val)
 }
 
 /**
- * int_bin -For convertinf int to binary
+ * int_bin -For converting integer to binary
  * @arg: The list of arguments
  * Return: 1
  */
-int int_bin(list arg)
+int int_bin(va_list arg)
 {
-	int b =index(arg, int);
+	int b =va_arg(va_arg, int);
 	return (int_bin(b));
 }
 

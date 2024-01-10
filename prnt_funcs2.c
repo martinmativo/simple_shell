@@ -33,9 +33,9 @@ int prnti(int m)
  * @arg: The list of arguments
  * Return: The number of printed characters
  */
-int prnt_str(list arg)
+int prnt_str(va_list arg)
 {
-	char *str = index(arg, char *);
+	char *str = va_arg(arg, char *);
 	int count = 0;
 
 	if (strg == NULL)
